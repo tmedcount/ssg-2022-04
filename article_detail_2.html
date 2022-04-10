@@ -21,6 +21,8 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
 <meta name="google-site-verification" content="O4z1R9nlAp3pS0GCxfJJqpk1JVkXBH8dgDEM8WiUp8o" />
+<!-- 제이쿼리 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<div class="body-content flex flex-column min-height-100vh">
@@ -45,7 +47,7 @@
 						</a></li>
 						<li><a class="block"> <i class="fas fa-list"></i> <span>ARTICLES</span>
 						</a>
-							<ul><li><a href="article_list_it_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>NOTICE LIST</span></a></li>
+							<ul><li><a href="article_list_it_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>NOTICE LIST</span></a></li><li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
 							</ul></li>
 						<li><a class="block"> <i class="fas fa-link"></i> <span>LINK</span>
 						</a>
@@ -95,23 +97,27 @@
 <section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">2강, SQL INSERT</h2>
+			<h2 class="article-detail__title">2강, INSERT</h2>
 
 			<div class="article-detail__sub-info flex">
 				<div class="article-detail__board-name">SQL</div>
-				<div class="article-detail__reg-date">2022-04-06 11:56:52</div>
+				<div class="article-detail__reg-date">2022-04-10 10:18:53</div>
 				<div class="article-detail__writer">강호성</div>
 			</div>
 
-			<div class="article-detail__body"># INSERT
+			<script type="text/x-template">
+# INSERT
 - 데이터 삽입 기능
 
 # INSERT 예시
 ```
-INSERT INTO `table_name`
-SET `column1_name` = 'value1',
-`column2_name` = 'value2'
-```</div>
+INSERT INTO `table_name`,
+SET `column1_name`  = `value1`,
+`column2_name`  = `value2`
+```
+
+			</script>
+			<div class="article-detail__body toast-ui-viewer"></div>
 
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
@@ -131,7 +137,7 @@ SET `column1_name` = 'value1',
 			</div>
 
 			<div class="article-detail__menu flex">
-				<a title="1강, SQL SELECT"
+				<a title="1강, SELECT 👼"
 					href="article_detail_1.html"
 					class="hover-underline ">&lt;
 					이전글</a> <a href="article_list_it_1.html"
