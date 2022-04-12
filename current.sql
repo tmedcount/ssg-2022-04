@@ -40,7 +40,7 @@ CREATE TABLE `article` (
 
 LOCK TABLES `article` WRITE;
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
-INSERT INTO `article` VALUES (1,'2022-04-10 10:15:33','2022-04-10 10:15:41','1강, SELECT 👼','# SELECT 😇\r\n- 데이터 조회 기능\r\n\r\n# SELECT 예시\r\n```\r\nSELECT `column_name`,\r\nFROM `table_name`\r\nWHERE `column_name` > 1 # 조건\r\n```\r\n',1,3),(2,'2022-04-10 10:18:53','2022-04-10 10:19:06','2강, INSERT','# INSERT\r\n- 데이터 삽입 기능\r\n\r\n# INSERT 예시\r\n```\r\nINSERT INTO `table_name`,\r\nSET `column1_name`  = `value1`,\r\n`column2_name`  = `value2`\r\n```\r\n',1,3);
+INSERT INTO `article` VALUES (1,'2022-04-10 10:15:33','2022-04-10 10:15:41','1강, SELECT 👼','# SELECT 😇\r\n- 데이터 조회 기능\r\n\r\n# SELECT 예시\r\n```sql\r\nSELECT `column_name`,\r\nFROM `table_name`\r\nWHERE `column_name` > 1 # 조건\r\n```\r\n',1,3),(2,'2022-04-10 10:18:53','2022-04-10 10:19:06','2강, INSERT','# INSERT\r\n- 데이터 삽입 기능\r\n\r\n# INSERT 예시\r\n```sql\r\nINSERT INTO `table_name`,\r\nSET `column1_name`  = `value1`,\r\n`column2_name`  = `value2`\r\n```\r\n',1,3);
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,7 +58,7 @@ CREATE TABLE `board` (
   `name` char(20) NOT NULL,
   `code` char(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `board` (
 
 LOCK TABLES `board` WRITE;
 /*!40000 ALTER TABLE `board` DISABLE KEYS */;
-INSERT INTO `board` VALUES (1,'2022-04-08 11:36:17','2022-04-08 11:36:17','공지사항','notice'),(2,'2022-04-08 11:36:17','2022-04-08 11:36:17','자유','free'),(3,'2022-04-10 10:15:11','2022-04-10 10:15:11','SQL','it');
+INSERT INTO `board` VALUES (3,'2022-04-10 10:15:11','2022-04-10 10:15:11','SQL','it');
 /*!40000 ALTER TABLE `board` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,4 +108,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-10 10:31:17
+-- Dump completed on 2022-04-12 14:30:10
